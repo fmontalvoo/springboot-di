@@ -9,8 +9,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+//import org.springframework.web.context.annotation.RequestScope;
+//import org.springframework.web.context.annotation.SessionScope;
+//import org.springframework.web.context.annotation.ApplicationScope;
 
 @Component
+//@RequestScope // Crea una instancia de la clase por cada peticion http.
+//@SessionScope // Crea una instancia de la clase y la mantiene mientras este abierto el navegador.
+//@ApplicationScope
 public class Factura {
 
 	@Autowired
