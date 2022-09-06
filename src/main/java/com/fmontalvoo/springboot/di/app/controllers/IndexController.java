@@ -1,6 +1,7 @@
 package com.fmontalvoo.springboot.di.app.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,6 +13,7 @@ public class IndexController {
 
 	// Inyeccion de dependencia a traves de la instancia.
 	@Autowired
+	@Qualifier("servicioImportante") // Indica la implementacion a usar a traves del nombre.
 	private IServicio servicio;
 
 	/**
