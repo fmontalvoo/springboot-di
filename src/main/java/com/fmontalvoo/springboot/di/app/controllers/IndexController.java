@@ -13,7 +13,7 @@ public class IndexController {
 
 	// Inyeccion de dependencia a traves de la instancia.
 	@Autowired
-	@Qualifier("servicioImportante") // Indica la implementacion a usar a traves del nombre.
+	@Qualifier("servicio") // Indica la implementacion a usar a traves del nombre.
 	private IServicio servicio;
 
 	/**
